@@ -1,6 +1,5 @@
 import {Grid2} from "@mui/material";
 import {UserCard} from "./UserCard";
-import React from "react";
 
 export const UsersGrid = ({users}) => {
     return (

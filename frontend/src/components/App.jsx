@@ -4,13 +4,14 @@ import  {useEffect, useState} from 'react'
 import {Typography, Container} from '@mui/material';
 import {UsersGrid} from "./UsersGrid";
 
+//TODO: Poner logo a la web y algún H1
 
 function App() {
     const API_URL = `https://random-data-api.com/api/v2/users?size=100`
 
     const [users, setUsers] = useState([])
     const [totalUsers, setTotalUsers] = useState(0)
-    
+
     const fetchUsers = async () => {
         axios.get(API_URL)
             .then(function (response) {
