@@ -14,7 +14,6 @@ app.listen(port, () => {
     console.log(`App listening on port ${port}`)
 })
 
-// POST /pokemon/findByName
 app.post('/pokemon/findByName', async (req, res) => {
     let {name} = req.body;
     name = name.trim().replace(/\s+/g, '');
@@ -36,7 +35,6 @@ app.post('/pokemon/findByName', async (req, res) => {
     }
 });
 
-// GET /pokemon/csv/:color
 app.get('/pokemon/csv/:color', async (req, res) => {
     const {color} = req.params;
     try {

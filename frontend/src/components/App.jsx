@@ -1,7 +1,6 @@
-import '../styles/App.css';
 import axios from 'axios';
 import InfiniteScroll from "react-infinite-scroll-component";
-import React, {useEffect, useState} from 'react'
+import  {useEffect, useState} from 'react'
 import {Typography, Container} from '@mui/material';
 import {UsersGrid} from "./UsersGrid";
 
@@ -11,6 +10,7 @@ function App() {
 
     const [users, setUsers] = useState([])
     const [totalUsers, setTotalUsers] = useState(0)
+    
     const fetchUsers = async () => {
         axios.get(API_URL)
             .then(function (response) {
