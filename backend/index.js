@@ -10,9 +10,6 @@ const port = 3000
 
 const POKEAPI_URL = 'https://pokeapi.co/api/v2';
 
-//TODO: Quitar espacios en el nombre del pokemon.
-//TODO: Que el count de la respuesta del post devuelva el total de objetos recibidos
-
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
 })
