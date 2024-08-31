@@ -4,7 +4,8 @@ import  {useEffect, useState} from 'react'
 import {Typography, Container} from '@mui/material';
 import {UsersGrid} from "./UsersGrid";
 
-//TODO: Poner logo a la web y algún H1
+//TODO: Poner logo a la web y algún H1?
+//TODO: Pasarlo a TypeScript
 
 function App() {
     const API_URL = `https://random-data-api.com/api/v2/users?size=100`

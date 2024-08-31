@@ -8,17 +8,46 @@ users at a time as the user scrolls down, providing an infinite scroll experienc
 ## Requirements
 
 - Node.js (version 18.3.1 or higher)
-- npm (or Yarn)
+- pnpm (recommended)
+- npm or yarn (optional)
 
 ## Installation and Running Locally
 
 1. Install Dependencies
+
+Using pnpm (recommended):
+
+   ```bash
+   pnpm install
+   ```   
+
+Alternatively, you can use npm or yarn:
+
    ```bash
    npm install
-   ```
+   ``` 
+
+   ```bash
+   yarn install
+   ``` 
+
+
 2. Run the Application
+
+Using pnpm (recommended):
+
+   ```bash
+   pnpm run dev
+   ```
+
+Alternatively, you can use npm or yarn:
+
    ```bash
    npm run dev
+   ```
+
+   ```bash
+   yarn dev
    ```
 
 The application will be running at http://localhost:5173.
