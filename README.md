@@ -1,9 +1,9 @@
-# Technical Test Project - Juan Valera Reales
+# Web development exercises- Juan Valera Reales
 
 ## Description
 
-This repository contains the solution to a technical test project created by Juan Valera Reales for Tubuntu
-Technologies. The project consists of two main parts: a frontend application built with React and Vite, and a backend
+This repository contains two exercises created by Juan Valera Reales for practicing web development
+skills. The project consists of two main parts: a frontend application built with React and Vite, and a backend
 API developed with Node.js and Docker.
 
 ### Frontend
