@@ -1,6 +1,6 @@
 import axios from 'axios';
 import InfiniteScroll from "react-infinite-scroll-component";
-import  {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
 import {Typography, Container} from '@mui/material';
 import {UsersGrid} from "./UsersGrid";
 
@@ -37,7 +37,7 @@ function App() {
                 dataLength={totalUsers}
                 next={fetchUsers}
                 hasMore={true}
-                loader={<Typography>Cargando...</Typography>}
+                loader={<Typography>Loading...</Typography>}
                 endMessage={
                     <Typography variant="body2" align="center">
                         No more users to show.
