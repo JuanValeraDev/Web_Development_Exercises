@@ -9,20 +9,45 @@ application is containerized using Docker, which facilitates its deployment and 
 
 - Node.js (version 22.2.0 or higher)
 - Docker (optional, if you want to run the application in a container)
+- pnpm (recommended)
+- npm or yarn (optional)
 
 ## Installation and Running Locally
 
 ### 1. Install Dependencies
 
-```bash
-npm install
-```
+Using pnpm (recommended):
+
+   ```bash
+   pnpm install
+   ```   
+
+Alternatively, you can use npm or yarn:
+
+   ```bash
+   npm install
+   ``` 
+
+   ```bash
+   yarn install
+   ``` 
 
 ### 2. Run the Application
+Using pnpm (recommended):
 
-```bash
-npm run dev
-```
+   ```bash
+   pnpm run dev
+   ```
+
+Alternatively, you can use npm or yarn:
+
+   ```bash
+   npm run dev
+   ```
+
+   ```bash
+   yarn dev
+   ```
 
 The application will be running at http://localhost:3000.
 
