@@ -11,7 +11,6 @@ app.listen(port, () => {
 });
 
 //TODO: Hacer Tests
-//TODO: Ofuscar código para que no esté relacionado con la empresa y se pueda compartir en github
 
 
 app.post('/pokemon/findByName', findPokemonByName);

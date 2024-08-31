@@ -1,4 +1,4 @@
-# Web development exercises- Juan Valera Reales
+# Web development exercises - Juan Valera Reales
 
 ## Description
 
