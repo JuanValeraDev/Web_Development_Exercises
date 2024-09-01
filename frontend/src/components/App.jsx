@@ -5,7 +5,6 @@ import {Typography, Container} from '@mui/material';
 import {UsersGrid} from "./UsersGrid";
 
 //TODO: Pasarlo a TypeScript
-//TODO: Hacer tests
 //TODO: Grabar live demo
 
 function App() {
@@ -38,11 +37,6 @@ function App() {
                 next={fetchUsers}
                 hasMore={true}
                 loader={<Typography>Loading...</Typography>}
-                endMessage={
-                    <Typography variant="body2" align="center">
-                        No more users to show.
-                    </Typography>
-                }
             >
                 {users.length > 0 && <UsersGrid users={users}/>}
             </InfiniteScroll>

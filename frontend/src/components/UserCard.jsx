@@ -1,5 +1,4 @@
 import {Avatar, Card, CardContent, Typography} from "@mui/material";
-import React from "react";
 
 export const UserCard = ({user}) => {
     return (
@@ -12,7 +11,8 @@ export const UserCard = ({user}) => {
             borderRadius: '20px',
             boxShadow: '0px 8px 6px #1E2A5E',
             border: '3px solid #E1D7B7'
-        }}>
+        }}
+              data-testid="user-card">
             <CardContent>
                 <Avatar
                     src={`https://robohash.org/${user.id}?set=set5`}

@@ -9,8 +9,9 @@ export const UsersGrid = ({users}) => {
                 padding: '2em',
                 borderRadius: '15px',
                 margin: '1em',
-            }
-        }>
+            }}
+               data-testid="users-grid"
+        >
             {users.map(user => (
                 <Grid2 item size={4} key={user.id}>
                     <UserCard user={user}/>
