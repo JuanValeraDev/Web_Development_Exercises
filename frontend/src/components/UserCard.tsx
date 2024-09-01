@@ -1,6 +1,19 @@
 import {Avatar, Card, CardContent, Typography} from "@mui/material";
+import React from "react";
 
-export const UserCard = ({user}) => {
+interface User {
+    id: number;
+    first_name: string;
+    last_name: string;
+    email: string;
+    phone_number: string;
+}
+
+interface UserCardProps {
+    user: User;
+}
+
+export const UserCard: React.FC<UserCardProps> = ({user}) => {
     return (
         <Card sx={{
             background: 'linear-gradient(180deg, #E1D7B7 0%, #7C93C3 1.5%, #55679C 100%)',

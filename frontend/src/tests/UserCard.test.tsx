@@ -1,9 +1,18 @@
-import {render, screen} from '@testing-library/react';
-import {describe, it, expect} from 'vitest';
-import {UserCard} from './../components/UserCard';
+import { render, screen } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
+import { UserCard } from '../components/UserCard';
+import React from 'react';
+
+interface User {
+    id: number;
+    first_name: string;
+    last_name: string;
+    email: string;
+    phone_number: string;
+}
 
 describe('UserCard component', () => {
-    const mockUser = {
+    const mockUser: User = {
         id: 1,
         first_name: 'John',
         last_name: 'Doe',
