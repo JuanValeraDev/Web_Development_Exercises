@@ -1,15 +1,8 @@
+import React from 'react';
 import {render, screen} from '@testing-library/react';
 import {describe, it, expect} from 'vitest';
 import {UsersGrid} from '../components/UsersGrid';
-import React from 'react';
-
-interface User {
-    id: number;
-    first_name: string;
-    last_name: string;
-    email?: string;
-    phone_number?: string;
-}
+import {User} from "../interfaces";
 
 describe('UsersGrid component', () => {
     const mockUsers: User[] = [
@@ -24,26 +17,24 @@ describe('UsersGrid component', () => {
     ];
 
     it('renders without crashing', () => {
-        render(<UsersGrid users={[]} />);
+        render(<UsersGrid users={[]}/>);
     });
 
     it('displays the correct number of UserCard components', () => {
-        render(<UsersGrid users={mockUsers} />);
+        render(<UsersGrid users={mockUsers}/>);
         const userCards = screen.getAllByTestId('user-card');
         expect(userCards).toHaveLength(mockUsers.length);
     });
 
     it('passes user data correctly to each UserCard', () => {
-        // @ts-ignore
-        render(<UsersGrid users={mockUsers} />);
+        render(<UsersGrid users={mockUsers}/>);
         mockUsers.forEach(user => {
-            // @ts-ignore
             expect(screen.getByText(`${user.first_name} ${user.last_name}`)).toBeInTheDocument();
         });
     });
 
     it('displays UserCard components in rows of three columns', () => {
-        render(<UsersGrid users={mockUsers} />);
+        render(<UsersGrid users={mockUsers}/>);
         const userCards = screen.getAllByTestId('user-card');
         const rows = Math.ceil(userCards.length / 3);
         for (let i = 0; i < rows; i++) {
